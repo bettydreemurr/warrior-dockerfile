@@ -29,6 +29,6 @@ subprocess.run([
     "--warrior-hq",
     "https://warriorhq.archiveteam.org",
     "--port",
-    "8001",
+    "8080",
     "--real-shutdown"
 ])
