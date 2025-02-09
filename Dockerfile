@@ -20,8 +20,8 @@ RUN git clone --depth 1 --recurse-submodules https://github.com/ArchiveTeam/warr
 
 COPY --chown=warrior:warrior start.py .
 
-EXPOSE 8001
+EXPOSE 8080
 STOPSIGNAL SIGINT
 
 ENTRYPOINT [ "python", "start.py" ]
-HEALTHCHECK --interval=5s --timeout=3s CMD /home/warrior/data/wget-at -nv -t1 'http://localhost:8001/index.html' -O /dev/null || exit 1
+HEALTHCHECK --interval=5s --timeout=3s CMD /home/warrior/data/wget-at -nv -t1 'http://localhost:8080/index.html' -O /dev/null || exit 1
