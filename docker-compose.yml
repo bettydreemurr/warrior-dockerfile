@@ -15,7 +15,7 @@ services:
     container_name: archiveTeamWarrior
     hostname: archiveTeamWarrior
     ports:
-      - "8001:8001"
+      - "8080:8080"
     labels:
       com.centurylinklabs.watchtower.enable: "true"
     restart: always
